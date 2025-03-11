@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+        .timeline::before {
+            content: "";
+            position: absolute;
+            width: 4px;
+            background: white;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            width: 45%;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(31, 130, 135, 0.37);
+            backdrop-filter: blur(6.5px);
+            -webkit-backdrop-filter: blur(6.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 20px;
+            position: relative;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .timeline-item:nth-child(odd) {
+            align-self: flex-start;
+        }
+        .timeline-item:nth-child(even) {
+            align-self: flex-end;
+        }
+        .timeline-item::after {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: white;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -10px;
+        }
+        .timeline-item:nth-child(even)::after {
+            left: auto;
+            right: -10px;
+        }
+        .btn-credential {
+            background-color: #ff4c68;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn-credential:hover {
+            background-color: #ff4757;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-dark text-light" id="offcanvasNav">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="education.html">Education</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="achievements.html">Achievements</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="Srilakshmi_H_Resume.pdf" download>Resume</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="achievements" class="container mt-5 pt-5 text-center">
+        <h2 class="mb-4">Achievements</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>🏆 Winner of SAGE IT’s All-India Level Scholarship</h4>
+                <p>(11/2024 - 12/2024)</p>
+                <p>Won a national level scholarship for an insightful article on 'Gen AI + Gen Z: Shaping the Future of Work,' securing a cash prize of Rs. 50,000.</p>
+                <a href="https://sageitinc.com/blog/india-scholarship-winning-article-jan-2025" target="_blank" class="btn-credential">View Credential</a>
+            </div>
+            <div class="timeline-item">
+                <h4>🎯 Winner of ASPIRIA'23</h4>
+                <p>(10/2023 - 12/2023)</p>
+                <p>An Odd Semester Talent Search Title Event. It is a team event and we were awarded a cash prize of Rs. 6,000.</p>
+                <a href="certificates/aspiria.jpeg" target="_blank" class="btn-credential">View Credential</a>
+            </div>
+            <div class="timeline-item">
+                <h4>🌟 One of the Top 7 Finalists in PERSOFEST'24</h4>
+                <p>(03/2024 - 05/2024)</p>
+                <p>Emerged as one of the top 7 finalists out of the 360+ participants of the Even Semester Talent Search Event.</p>
+                <a href="certificates/persofest.jpeg" target="_blank" class="btn-credential">View Credential</a>
+            </div>
+            <div class="timeline-item">
+                <h4>🎤 Best Speaker Award - D for Debate 2022</h4>
+                <p>(10/2022 - 11/2022)</p>
+                <p>Awarded Best Speaker in an intra-college debate competition, competing against 150+ participants.</p>
+                <a href="certificates/d_for_d.jpeg" target="_blank" class="btn-credential">View Credential</a>
+            </div>
+            <div class="timeline-item">
+                <h4>📚 Vice Chairperson - Book Readers' Club MIT</h4>
+                <p>(01/2023 - Present)</p>
+                <p>Organized 10+ events and mentored 20+ club members to foster a reading culture on campus.</p>
+                <a href="certificates/d_for_d.pdf" target="_blank" class="btn-credential">View Credential</a>
+            </div>
+            <div class="timeline-item">
+                <h4>📜 Paper Accepted for IEEE Xplore Publication</h4>
+                <p>Our research on sequential prediction of satellite images using deep learning has been accepted for publication in IEEE Xplore, with the official release expected in the next 2-3 months.</p>
+                <a href="certificates/d_for_d.pdf" target="_blank" class="btn-credential">View Credential</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

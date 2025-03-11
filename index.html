@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Srilakshmi H</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #121212, #000000);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* Sidebar toggle aesthetic */
+        .navbar-toggler {
+            border: none;
+            outline: none;
+            transition: transform 0.3s ease-in-out;
+        }
+        .navbar-toggler:hover {
+            filter: drop-shadow(0px 0px 5px rgba(255, 105, 180, 0.7));
+        }
+        
+        /* Text styling */
+        h1 {
+            color: #ff6b81;
+            font-weight: bold;
+        }
+        p {
+            color: #c7c7c7;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h6>My Portfolio | Navigate through here</h6></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-dark text-light" id="offcanvasNav">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link text-light" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="education.html">Education</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="achievements.html">Achievements</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="Srilakshmi_H_Resume.pdf" download>Resume</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home/About Section -->
+    <section id="home" class="container text-center mt-5 pt-5 d-flex align-items-center justify-content-center" style="min-height: 90vh;">
+        <div class="row w-100">
+            <div class="col-md-5 d-flex justify-content-center">
+                <img src="my_photo.png" alt="Srilakshmi H" class="img-fluid rounded-circle" style="max-width: 80%; border: 4px solid #ff6b81;">
+            </div>
+            <div class="col-md-7 text-start d-flex flex-column justify-content-center">
+                <h1>Hi, I am Srilakshmi H</h1>
+                <p>Welcome to my portfolio website! I am passionate about AI, Data Science, and Software Development. This website showcases my projects, achievements, and articles. Feel free to explore!</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
