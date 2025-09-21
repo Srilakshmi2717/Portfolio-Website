@@ -81,7 +81,7 @@ const Achievements = () => {
     {
       title: "Coding Achievements",
       category: "General Achievements",
-      description: "Solved 200+ problems across coding platforms with a contest rating of 1550+",
+      description: "Solved 300+ problems across coding platforms with a contest rating of 1690+ on LeetCode.",
       date: "Ongoing",
       organization: "Various Platforms",
       details: "Consistent problem-solving across multiple competitive programming platforms demonstrating algorithmic expertise",
